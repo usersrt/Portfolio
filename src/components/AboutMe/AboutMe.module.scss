@@ -1,0 +1,79 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 125px;
+}
+.AboutMe{
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        &__title{
+            font-size: 18px;
+            font-family: 'RobotoC';
+            font-weight: 500;
+            color: rgb(226, 194, 105);
+            position: relative;
+            text-transform: uppercase;
+            margin-left: 45px;
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: rgb(226, 194, 105);
+                height: 1px;
+                width: 35px;
+                border-radius: 25px;
+                left: -40px;
+                top: 50%;
+            }
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 55px;
+            color: white;
+            &2{
+                color: white;
+                font-weight: 300;
+                font-size: 18px;
+                max-width: 650px;
+                width: 100%;
+            }
+        }
+        &__span{
+            color: rgb(226, 194, 105);
+            font-family: 'RobotoC';
+            font-weight: 400;
+        }
+    }
+    &__right{
+        height: 475px;
+        width: 475px;
+    }
+}
+@media (max-width: 1350px) {
+    .AboutMe__left__text2{
+        max-width: 550px;
+    }
+}
+@media (max-width: 1199.99px) {
+    .AboutMe__left__text2{
+        max-width: 450px;
+    }
+}
+@media (max-width: 991.98px) {
+    .wrapper{
+        flex-direction: column;
+        gap: 75px;
+    }
+}
+@media (max-width: 575.98px) {
+    .AboutMe__left__text{
+        font-size: 35px;
+
+    }
+    .AboutMe__right{
+        height: 350px;
+        width: 350px;
+    }
+}

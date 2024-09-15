@@ -1,0 +1,50 @@
+.nav{
+    padding: 15px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 35px;
+    background: rgb(63,37,144);
+    background: -moz-linear-gradient(48deg, rgba(63,37,144,1) 24%, rgba(11,19,56,1) 49%, rgba(78,48,149,1) 70%);
+    background: -webkit-linear-gradient(48deg, rgba(63,37,144,1) 24%, rgba(11,19,56,1) 49%, rgba(78,48,149,1) 70%);
+    background: linear-gradient(48deg, rgba(63,37,144,1) 24%, rgba(11,19,56,1) 49%, rgba(78,48,149,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f2590",endColorstr="#4e3095",GradientType=1);
+    animation: navGradien 10s ease infinite;
+    background-size: 200% 200%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px 2px rgb(55, 30, 112);
+    &__list{
+        display: flex;
+        gap: 45px;
+        &__link{
+            padding: 25px;
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+
+@keyframes navGradien {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+@media (max-width: 575.98px) {
+    .nav__list{
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+}

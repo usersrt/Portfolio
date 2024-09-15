@@ -1,0 +1,45 @@
+@import './fonts.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1350px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    height: 100%;
+    background: rgb(43,25,99);
+    background: -moz-linear-gradient(45deg, rgba(43,25,99,1) 24%, rgba(19,24,45,1) 49%, rgba(37,23,70,1) 70%);
+    background: -webkit-linear-gradient(45deg, rgba(43,25,99,1) 24%, rgba(19,24,45,1) 49%, rgba(37,23,70,1) 70%);
+    background: linear-gradient(45deg, rgba(43,25,99,1) 24%, rgba(19,24,45,1) 49%, rgba(37,23,70,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b1963",endColorstr="#251746",GradientType=1);
+    animation: grdient 10s ease infinite;
+    background-size: 300% 300%;
+}
+@keyframes grdient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
